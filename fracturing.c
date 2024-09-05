@@ -9,11 +9,11 @@ double distancestatement(){
 
     double x1,x2,y1,y2,totalDistance;
 
-    printf("Enter two numbers for point 1 (x1,y1)\n");
-    scanf("%lf%lf", &x1, &y1);
+    printf("Enter two numbers for the 'x' values (x1,x2)\n");
+    scanf("%lf%lf", &x1, &x2);
 
-    printf("Enter two numbers for point 2 (x2,y2)\n");
-    scanf("%lf%lf", &x2, &y2);
+    printf("Enter two numbers for the 'y' values (y1,y2)\n");
+    scanf("%lf%lf", &y1, &y2);
 
     printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf \n", x1, y1);
     printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf \n", x2, y2);
@@ -24,22 +24,14 @@ double distancestatement(){
 }
 
 double calculateDistance(){
-   double x1,x2,y1,y2,totalDistance;
+    
+    double distance=0;
 
-    printf("Enter two numbers for point 1 (x1,y1)\n");
-    scanf("%lf%lf", &x1, &y1);
+    distance=distancestatement();
 
-    printf("Enter two numbers for point 2 (x2,y2)\n");
-    scanf("%lf%lf", &x2, &y2);
+    printf("The distance between the two points is %.3lf \n", distance);
 
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf \n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf \n", x2, y2);
-
-    totalDistance= sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
-
-    printf("The distance between the two points is %.3lf \n", totalDistance);
-
-    return totalDistance;
+    return distance;
 
 
 }
@@ -50,7 +42,7 @@ double calculatePerimeter(){
 
     double radius=0;
 
-    radius=sqrt(distancestatement());
+    radius=distancestatement() / 2;
 
     totalPerimeter=2*PI*radius;
     
@@ -68,7 +60,7 @@ double calculateArea(){
 
     double radius=0;
 
-    radius=sqrt(distancestatement());
+    radius=distancestatement() / 2;
 
     totalArea=PI*radius*radius;
     
