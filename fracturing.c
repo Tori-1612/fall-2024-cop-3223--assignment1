@@ -32,8 +32,6 @@ double calculateDistance(){
     printf("The distance between the two points is %.3lf \n", distance);
 
     return distance;
-
-
 }
 
 double calculatePerimeter(){
@@ -52,7 +50,6 @@ double calculatePerimeter(){
 
     return difficultyLevel;
 }
-
 
 double calculateArea(){
     
@@ -97,9 +94,6 @@ double calculateHeight(){
     return difficultyLevel;
 }
 
-
-
-
 int main(int argc, char**argv){
     calculateDistance();
     calculatePerimeter();
@@ -108,6 +102,4 @@ int main(int argc, char**argv){
     calculateHeight();
 
     return 0;
-
-
 }
